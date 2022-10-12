@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Creating a class Square that defines a square"""
+"""Creating a class Square that defines a square(based on 2-square.py)"""
 
 
 class Square:
@@ -20,3 +20,7 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
+
+    def area(self):
+        """Returns the current square area"""
+        return self.__size ** 2
