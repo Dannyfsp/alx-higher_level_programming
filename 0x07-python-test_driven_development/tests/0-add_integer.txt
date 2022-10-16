@@ -1,10 +1,10 @@
 Test cases for 0-add_integer module
-==========================
+===================================
 
-Using "add_integer"
+Using ``add_integer``
 ---------------------
 
-First import "add_integer" from the add_integer module:
+First import ``add_integer`` from the add_integer module:
 
 	>>> add_integer = __import__('0-add_integer').add_integer
 
