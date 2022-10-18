@@ -2,7 +2,7 @@
 """
 Rectangle module that contains a class that defines a rectangle
 Also returns the area and perimeter of the rectangle
-Also uses the __str__ and __repl__ method
+Also uses the __str__ and __repr__ method
 """
 
 
@@ -73,6 +73,6 @@ class Rectangle:
                 rectangle += "\n"
         return rectangle
 
-    def __repl__(self):
+    def __repr__(self):
         """Sets the repr behaviour of the Rectangle object"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
