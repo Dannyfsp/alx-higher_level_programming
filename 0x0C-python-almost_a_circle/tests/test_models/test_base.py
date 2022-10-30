@@ -38,7 +38,7 @@ class TestBase_instantiation(unittest.TestCase):
     def test_id_public(self):
         b = Base(12)
         b.id = 15
-        self.assertEqual(i5, b.id)
+        self.assertEqual(15, b.id)
 
     def test_nb_instances_private(self):
         with self.assertRaises(AttributeError):
@@ -48,7 +48,7 @@ class TestBase_instantiation(unittest.TestCase):
         self.assertEqual("hi", Base("hi").id)
 
     def test_float_id(self):
-        self.asserEqual(5.5, Base(5.5).id)
+        self.assertEqual(5.5, Base(5.5).id)
 
     def test_complex_id(self):
         self.assertEqual(complex(5), Base(complex(5)).id)
@@ -87,11 +87,12 @@ class TestBase_instantiation(unittest.TestCase):
         self.assertEqual(float('inf'), Base(float('inf')).id)
 
     def test_NaN_id(self):
-        self.assertEqual(float('NaN'), Base(float('NaN')).id)
+        self.assertNotEqual(float('nan'), Base(float('nan')).id)
 
     def test_two_args(self):
         with self.assertRaises(TypeError):
             Base(1, 2)
+
 
 if __name__ == "__main__":
     unittest.main()
