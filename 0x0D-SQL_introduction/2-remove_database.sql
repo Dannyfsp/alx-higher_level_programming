@@ -1,0 +1,3 @@
+-- deletes the database hbtn_0c_0 in MySQL server
+-- if the database hbtn_0c_0 doesn't exist, the script should not fail
+DROP DATABASE IF EXISTS htbn_0c_0;
