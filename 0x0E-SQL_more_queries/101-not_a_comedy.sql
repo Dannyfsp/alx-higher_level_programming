@@ -4,8 +4,8 @@
 -- Results must be sorted in ascending order by the genre name
 -- We can use a maximum of two SELECT statement
 -- The database name will be passed as an argument of the mysql command
-SELECT tv_genres.title
-FROM tv_genres
+SELECT tv_shows.title
+FROM tv_shows
 WHERE title NOT IN (
 	SELECT tv_genres.title
 	FROM tv_shows
@@ -13,6 +13,6 @@ WHERE title NOT IN (
 	ON tv_shows.id = tv_show_genres.show_id
 		INNER JOIN tv_genres
 		ON tv_show_genres.genre_id = tv_genres.id
-	WHERE tv_shows.name = 'Comedy'
+	WHERE tv_genres.name = 'Comedy'
 )
 ORDER BY tv_genres.title;
