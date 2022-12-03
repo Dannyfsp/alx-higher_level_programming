@@ -1,6 +1,6 @@
 -- Lists all shows from hbtn_0d_tvshows_rate by their ratings
 -- Each record should display: tv_shows.title - rating sum
--- Results must be sorted in ascending order by the rating
+-- Results must be sorted in descending order by the rating
 -- The database name will be passed as an argument of the mysql command
 SELECT tv_shows.title, SUM(tv_show_ratings.rate) AS rating
 FROM tv_shows
