@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script creates the State "California" with the city 
+This script creates the State "California" with the city
 "San Francisco" from the database hbtn_0e_100_usa
 """
 
