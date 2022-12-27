@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This script lists all Stateobjects, and correponding
-City objects contained in the database hbtn_0e_100_usa
+City objects contained in the database hbtn_0e_101_usa
 """
 
 import sys
