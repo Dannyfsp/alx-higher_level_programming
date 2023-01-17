@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Takes my Github credentials (username and password) and uses the 
+Takes my Github credentials (username and password) and uses the
 Github API to display my id
 """
 import requests
@@ -14,5 +14,5 @@ if __name__ == "__main__":
         r = requests.get('https://api.github.com/user', auth=(
             username, password)).json()
         print(r.get('id'))
-    except:
+    except ValueError:
         print("None")
