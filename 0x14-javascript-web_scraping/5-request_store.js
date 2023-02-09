@@ -4,4 +4,6 @@ const fs = require('fs');
 const url = process.argv[2];
 const file = process.argv[3];
 
-request.get(url).pipe(fs.createWriteStream(process.argv[3]));
+request
+  .get(url)
+  .pipe(fs.createWriteStream(file));
