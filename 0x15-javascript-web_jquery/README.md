@@ -2,8 +2,8 @@
 
 ## Concepts
 *For this project, we expect you to look at these concepts:*
-- JavaScript in the browser
-- Dealing with data statically versus dynamically
+- [JavaScript in the browser](https://intranet.alxswe.com/concepts/3)
+- [Dealing with data statically versus dynamically](https://intranet.alxswe.com/concepts/35)
 
 ![jquery img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/4724718.jpg)
 
